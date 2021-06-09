@@ -82,9 +82,9 @@ copyright: <p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  
 social:
   qq: tencent://message/?Menu=yes&uin=894519210 || iconQQ || '#12B7F5'
   wechat: javascript:; || iconwechat-fill || '#09BB07'
-  instagram: https://www.instagram.com/izhaoo/ || iconinstagram || '#DA2E76'
-  github: https://github.com/zhaoo || icongithub-fill || '#9f7be1'
-  email: mailto:izhaoo@163.com || iconmail
+  instagram: https://www.instagram.com/zenglbg/ || iconinstagram || '#DA2E76'
+  github: https://github.com/zenglbg || icongithub-fill || '#9f7be1'
+  email: mailto:zenglbg@qq.com || iconmail
 
 # Override Scrollbar
 scrollbar:
@@ -103,7 +103,7 @@ search:
 qrcode:
   enable: true
   type: url # url | image
-  image: https://pic.izhaoo.com/weapp-code.jpg
+  image: https://pic1.izhaoo.com/weapp-code.jpg
 
 # Color Mode
 color_mode:
