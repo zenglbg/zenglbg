@@ -6,12 +6,13 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Archive - Hexo</title>
+  <title>android环境配置 - Hexo</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
   
-  
+  <meta name="description" content="android 环境配置
+windowsSDK 默认是...">
   <meta name="author" content="zeng lbg">
   <link rel="icon" href="/images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="icon" href="/images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
@@ -145,7 +146,7 @@
       
       
     </div>
-    <div class="center">归档</div>
+    <div class="center">android环境配置</div>
     <div class="right">
       <i class="iconfont iconmenu j-navbar-menu"></i>
     </div>
@@ -167,7 +168,7 @@
       </li><li class="menu-item">
         <a href="/galleries/ " class="underline "> 摄影</a>
       </li><li class="menu-item">
-        <a href="/archives/ " class="underline active"> 归档</a>
+        <a href="/archives/ " class="underline "> 归档</a>
       </li><li class="menu-item">
         <a href="/tags/ " class="underline "> 标签</a>
       </li><li class="menu-item">
@@ -181,59 +182,84 @@
   </div>
 </nav>
   <main id="main">
-  <section class="archive">
-    <div class="archive-container">
-      <div class="archive-post">
-        <h3 class="archive-total">归档: 7 篇</h3>
+  <div class="article-wrap">
+    <div class="row container">
+      <div class="col-xl-3"></div>
+      <div class="col-xl-6"><article class="article">
+  <div class="wrap">
+    <section class="head">
+  <img   class="lazyload" data-original="/images/theme/post-image.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title">android环境配置</h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>July 27, 2021</span>
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>505</span>
+    </div>
+  </div>
+</section>
+    <section class="main">
+      <section class="content">
+        <h1 id="android-环境配置"><a href="#android-环境配置" class="headerlink" title="android 环境配置"></a>android 环境配置</h1><ul>
+<li>windows<br>SDK 默认是安装在下面的目录：<br><img    class="lazyload" data-original="https://pic.zenglbg.com/images/flutter/android_home.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">图片</span></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\你的用户名\AppData\Local\Android\Sdk</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">%ANDROID_HOME%\platform-tools</span><br><span class="line">%ANDROID_HOME%\emulator</span><br><span class="line">%ANDROID_HOME%\tools</span><br><span class="line">%ANDROID_HOME%\tools\bin</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>macos</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install adoptopenjdk/openjdk/adoptopenjdk8</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 如果你不是通过Android Studio安装的sdk，则其路径可能不同，请自行确定清楚</span><br><span class="line">export ANDROID_HOME=$HOME/Library/Android/sdk</span><br><span class="line">export PATH=$PATH:$ANDROID_HOME/emulator</span><br><span class="line">export PATH=$PATH:$ANDROID_HOME/tools</span><br><span class="line">export PATH=$PATH:$ANDROID_HOME/tools/bin</span><br><span class="line">export PATH=$PATH:$ANDROID_HOME/platform-tools</span><br></pre></td></tr></table></figure>
+
+      </section>
+      <section class="extra">
+        
+          <ul class="copyright">
+  
+    <li><strong>本文作者：</strong>zeng lbg</li>
+    <li><strong>本文链接：</strong><a href="http://zenglbg.com/2021/07/27/flutter-style/index.html" title="http:&#x2F;&#x2F;zenglbg.com&#x2F;2021&#x2F;07&#x2F;27&#x2F;flutter-style&#x2F;index.html">http:&#x2F;&#x2F;zenglbg.com&#x2F;2021&#x2F;07&#x2F;27&#x2F;flutter-style&#x2F;index.html</a></li>
+    <li><strong>版权声明：</strong>本博客所有文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" title="BY-NC-SA" target="_blank" rel="noopener">BY-NC-SA</a> 许可协议，转载请注明出处！</li>
+  
+</ul>
         
         
-          
-            <h3 class="archive-year">2021 年</h3>
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/07/27/flutter-style/">July 27</a>
-            <a class="archive-title" href="/2021/07/27/flutter-style/">android环境配置</a>
-          </div>
+          <section class="donate">
+  <div id="qrcode-donate">
+    <img   class="lazyload" data-original="https://pic.zenglbg.com/images/ali-pay.JPG" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" >
+  </div>
+  <div class="icon">
+    <a href="javascript:;" id="alipay"><i class="iconfont iconalipay"></i></a>
+    <a href="javascript:;" id="wechat"><i class="iconfont iconwechat-fill"></i></a>
+  </div>
+</section>
+        
+        
+        
+  <nav class="nav">
+    <a></a>
+    <a href="/2021/07/26/html-table/">HTML细线表格<i class="iconfont iconright"></i></a>
+  </nav>
+
+      </section>
+      
+    </section>
+  </div>
+</article></div>
+      <div class="col-xl-3">
         
           
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/07/26/html-table/">July 26</a>
-            <a class="archive-title" href="/2021/07/26/html-table/">HTML细线表格</a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/07/26/docker-nginx/">July 26</a>
-            <a class="archive-title" href="/2021/07/26/docker-nginx/">docker nginx 配置证书</a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/07/26/telegram-bot/">July 26</a>
-            <a class="archive-title" href="/2021/07/26/telegram-bot/"></a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/07/26/py-fs/">July 26</a>
-            <a class="archive-title" href="/2021/07/26/py-fs/">python 目录操作</a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/07/26/nth-child/">July 26</a>
-            <a class="archive-title" href="/2021/07/26/nth-child/"></a>
-          </div>
-        
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2021/07/26/hello-world/">July 26</a>
-            <a class="archive-title" href="/2021/07/26/hello-world/">Hello World</a>
-          </div>
+  <aside class="toc-wrap">
+    <h3 class="toc-title">文章目录：</h3>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#android-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-text">android 环境配置</span></a></li></ol>
+  </aside>
+
         
       </div>
     </div>
-  </section>
+  </div>
 </main>
   
 
