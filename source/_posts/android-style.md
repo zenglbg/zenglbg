@@ -4,7 +4,7 @@ title: android环境配置
 
 # android 环境配置
 
-- windows
+## windows
   SDK 默认是安装在下面的目录：
   ![图片](https://pic.zenglbg.com/images/flutter/android_home.png)
 
@@ -19,7 +19,7 @@ C:\Users\你的用户名\AppData\Local\Android\Sdk
 %ANDROID_HOME%\tools\bin
 ```
 
-- macos
+## macos
 
 ```
 brew install adoptopenjdk/openjdk/adoptopenjdk8
