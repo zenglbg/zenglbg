@@ -1,12 +1,17 @@
 ---
 title: android环境配置
+categories:
+  - android
+tags:
+  - android
 ---
 
 # android 环境配置
 
 ## windows
-  SDK 默认是安装在下面的目录：
-  ![图片](https://pic.zenglbg.com/images/flutter/android_home.png)
+
+SDK 默认是安装在下面的目录：
+![图片](https://pic.zenglbg.com/images/flutter/android_home.png)
 
 ```
 C:\Users\你的用户名\AppData\Local\Android\Sdk

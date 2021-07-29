@@ -1,16 +1,21 @@
 ---
 title: flutter 组件化开发，抽离公共ui
+categories:
+  - flutter
+tags:
+  - flutter
 ---
 
-# flutter 组件化开发，抽离公共ui
-初学flutter会把一个页面的所有代码都写在一个文件中，这样的代码
+# flutter 组件化开发，抽离公共 ui
+
+初学 flutter 会把一个页面的所有代码都写在一个文件中，这样的代码
 <img src="https://pic.zenglbg.com/images/flutter/2021-07-28 22.25.38.jpg" alt="示例图片" style="zoom:75%;" />
 
-## 抽离appbar
-> AppBar和普通的container组件不太一样，会提示下面这种类似的错误
-> `error: The argument type 'xxx' cannot be assigned to the parameter type 'PreferredSizeWidget'. (argument_type_not_assignable at [so_app] lib/xxxx.dart:xxx)
-`
-> 我们需继承PreferredSizeWidget,并实现preferredSize
+## 抽离 appbar
+
+> AppBar 和普通的 container 组件不太一样，会提示下面这种类似的错误
+> `error: The argument type 'xxx' cannot be assigned to the parameter type 'PreferredSizeWidget'. (argument_type_not_assignable at [so_app] lib/xxxx.dart:xxx) `
+> 我们需继承 PreferredSizeWidget,并实现 preferredSize
 
 ```dart
 import 'package:flutter/material.dart';
@@ -43,9 +48,9 @@ class HomeHeader extends StatelessWidget with PreferredSizeWidget {
 }
 ```
 
-## 抽离头部和底部相同的代码为layout组件
+## 抽离头部和底部相同的代码为 layout 组件
 
-> 我们很大概率会遇到header和footer固定，内容变化的页面。这时候可以把这部分代码抽离出来。
+> 我们很大概率会遇到 header 和 footer 固定，内容变化的页面。这时候可以把这部分代码抽离出来。
 
 ```dart
 import 'package:flutter/material.dart';
@@ -76,7 +81,7 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
-  
+
   Widget testContainer({Widget child = const Text('default child')}){
     return Container(
     margin: const EdgeInsets.all(10),
@@ -105,4 +110,3 @@ class MyApp extends StatelessWidget {
 ```
 
 <img src="https://pic.zenglbg.com/images/flutter/2021-07-28 22.47.11.jpg" alt="抽离头部和底部相同的代码为layout组件示意图" style="zoom:75%;" />
-

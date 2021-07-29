@@ -1,8 +1,12 @@
 ---
 title: HTML细线表格
+categories:
+  - flutter
+tags:
+  - flutter
 ---
 
-这段代码定义了border = 1px的表格，但实际上表格的实际边框宽度为2px, 这是因为表格边框由：表格外边框和单元格边框两部分构成。
+这段代码定义了 border = 1px 的表格，但实际上表格的实际边框宽度为 2px, 这是因为表格边框由：表格外边框和单元格边框两部分构成。
 
 ```
 
@@ -18,9 +22,10 @@ title: HTML细线表格
 <table>
 ```
 
+定义一个细线表格(实际边宽为 1px)
 
-定义一个细线表格(实际边宽为1px) 
-- cellspacing和背景色技术
+- cellspacing 和背景色技术
+
 ```
 <table border="0"
        cellspacing="1"
@@ -38,7 +43,8 @@ title: HTML细线表格
 <table>
 ```
 
-- 使用border-collapse属性
+- 使用 border-collapse 属性
+
 ```
 <table border="1"
        cellspacing="0"
@@ -56,6 +62,3 @@ title: HTML细线表格
     </tr>
 <table>
 ```
-
-
-

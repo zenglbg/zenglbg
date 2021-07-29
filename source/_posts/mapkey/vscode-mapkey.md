@@ -1,15 +1,25 @@
 ---
 title: macos vscode快捷键汇总
+cover: https://pic.zenglbg.com/images/blog/1.jpeg
+top_img: https://pic.zenglbg.com/images/blog/analytics-3088958_640.jpg
+categories:
+  - vscode
+tags:
+  - vscode
+  - 快捷键
 ---
-# macos vscode快捷键汇总
+
+# macos vscode 快捷键汇总
 
 ## 全局
+
 Command + Shift + P / F1 显示命令面板
 Command + P 快速打开
 Command + Shift + N 打开新窗口
 Command + W 关闭窗口
 
 ## 基本
+
 Command + X 剪切（未选中文本的情况下，剪切光标所在行）
 Command + C 复制（未选中文本的情况下，复制光标所在行）
 Option + Up 向上移动行
@@ -19,7 +29,7 @@ Option + Shift + Down 向下复制行
 Command + Shift + K 删除行
 Command + Enter 下一行插入
 Command + Shift + Enter 上一行插入
-Command + Shift +  跳转到匹配的括号
+Command + Shift + 跳转到匹配的括号
 Command + [ 减少缩进
 Command + ] 增加缩进
 Home 跳转至行首
@@ -43,6 +53,7 @@ Option + Shift + A 添加、移除块注释
 Option + Z 自动换行、取消自动换行
 
 ## 导航
+
 Command + T 显示所有符号
 Ctrl + G 跳转至某行
 Command + P 跳转到某个文件
@@ -56,6 +67,7 @@ Ctrl + Shift + - 前进
 Ctrl + Shift + M Tab 切换焦点
 
 ## 多光标与选择
+
 Option + 点击 插入多个光标
 Command + Option + Up 向上插入光标
 Command + Option + Down 向下插入光标
@@ -74,9 +86,8 @@ Command + Shift + Option + Right 列选择 向右
 Command + Shift + Option + PgUp 列选择 向上翻页
 Command + Shift + Option + PgDown 列选择 向下翻页
 
-
-
 ## 查找替换
+
 Command + F 查找
 Command + Option + F 替换
 Command + G 查找下一个
@@ -85,8 +96,8 @@ Option + Enter 选中所有匹配项
 Command + D 向下选中相同内容
 Command + K Command + D 移除前一个向下选中相同内容
 
-
 ## 集成终端
+
 Ctrl + 显示终端 Ctrl + Shift + 新建终端
 Command + Up 向上滚动
 Command + Down 向下滚动
@@ -96,9 +107,10 @@ Command + Home 滚动到顶部
 Command + End 滚动到底部
 
 ## 进阶
+
 Ctrl + Space 打开建议
 Command + Shift + Space 参数提示
-Tab Emmet插件缩写补全
+Tab Emmet 插件缩写补全
 Option + Shift + F 格式化
 Command + K Command + F 格式化选中内容
 F12 跳转到声明位置
@@ -113,9 +125,10 @@ Command + K Command + X 删除行尾多余空格
 Command + K M 更改文件语言
 
 ## 编辑器管理
+
 Command + W 关闭编辑器
 Command + K F 关闭文件夹
-Command +  编辑器分屏
+Command + 编辑器分屏
 Command + 1 切换到第一分组
 Command + 2 切换到第二分组
 Command + 3 切换到第三分组
@@ -127,6 +140,7 @@ Command + K Left 激活左侧编辑组
 Command + K Right 激活右侧编辑组
 
 ## 文件管理
+
 Command + N 新建文件
 Command + O 打开文件
 Command + S 保存文件
@@ -143,6 +157,7 @@ Command + K R 在资源管理器中查看当前文件
 Command + K O 新窗口打开当前文件
 
 ## 显示
+
 Command + Ctrl + F 全屏、退出全屏
 Command + Option + 1 切换编辑器分屏方式（横、竖）
 Command + + 放大
@@ -150,18 +165,18 @@ Command + - 缩小
 Command + B 显示、隐藏侧边栏
 Command + Shift + E 显示资源管理器 或 切换焦点
 Command + Shift + F 显示搜索框
-Ctrl + Shift + G 显示Git面板
+Ctrl + Shift + G 显示 Git 面板
 Command + Shift + D 显示调试面板
 Command + Shift + X 显示插件面板
 Command + Shift + H 全局搜索替换
 Command + Shift + J 显示、隐藏高级搜索
 Command + Shift + C 打开新终端
 Command + Shift + U 显示输出面板
-Command + Shift + V Markdown预览窗口
-Command + K V 分屏显示 Markdown预览窗口
-
+Command + Shift + V Markdown 预览窗口
+Command + K V 分屏显示 Markdown 预览窗口
 
 ## 调试
+
 F9 设置 或 取消断点
 F5 开始 或 继续
 F11 进入

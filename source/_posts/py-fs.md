@@ -1,5 +1,9 @@
 ---
 title: python 目录操作
+categories:
+  - python
+tags:
+  - python
 ---
 
 将 python 的文件系统、路径操作 API 详细的学习了一下，代码都是测试过的，也许很简单，但为了打好基础，还是要有点一丝不苟的精神，希望对你有用……
