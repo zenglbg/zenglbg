@@ -1,5 +1,6 @@
 ---
 title: macos vscode快捷键汇总
+image:
 cover: https://pic.zenglbg.com/images/blog/1.jpeg
 top_img: https://pic.zenglbg.com/images/blog/analytics-3088958_640.jpg
 categories:

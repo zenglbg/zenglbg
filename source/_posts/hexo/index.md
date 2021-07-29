@@ -1,10 +1,13 @@
 ---
 title: hexo 学习资源汇总
-tags:
+tags: [hexo, 主题]
 categories:
   - hexo
 comments:
   - true
+keywords: hexo-theme-zenglbg, zenglbg, hexo, 主题, theme, 简约, 响应式
+image: https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.17 (1).jpeg
+cover: https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.17 (1).jpeg
 photos:
   - https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.14.jpeg
 ---
@@ -21,3 +24,8 @@ photos:
 
 [文章图片 1](https://www.pexels.com/)
 [文章图片 2](https://pixabay.com/)
+[文章图片 3](https://imgur.com/)
+
+## 配置文章图片
+
+[配置文章图片](https://www.cnblogs.com/sabai/p/12732127.html)
