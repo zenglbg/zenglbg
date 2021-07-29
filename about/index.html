@@ -6,15 +6,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>docker nginx 配置证书 - Hexo</title>
+  <title>about - Hexo</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
   
-  <meta name="description" content="
-阅读服务条款
-
-是否同意 certbot 提供方发送...">
+  
   <meta name="author" content="zeng lbg">
   <link rel="icon" href="/images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="icon" href="/images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
@@ -148,7 +145,7 @@
       
       
     </div>
-    <div class="center">docker nginx 配置证书</div>
+    <div class="center">about</div>
     <div class="right">
       <i class="iconfont iconmenu j-navbar-menu"></i>
     </div>
@@ -174,7 +171,7 @@
       </li><li class="menu-item">
         <a href="/categories/ " class="underline "> 分类</a>
       </li><li class="menu-item">
-        <a href="/about/ " class="underline "> 关于</a>
+        <a href="/about/ " class="underline active"> 关于</a>
       </li></ul>
     
       <div class="menu-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/zenglbg">圈圈</a></p></div>
@@ -190,45 +187,17 @@
     <section class="head">
   <img   class="lazyload" data-original="/images/theme/post-image.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
   <div class="head-mask">
-    <h1 class="head-title">docker nginx 配置证书</h1>
+    <h1 class="head-title">about</h1>
     <div class="head-info">
-      <span class="post-info-item"><i class="iconfont iconcalendar"></i>July 27, 2021</span>
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>July 29, 2021</span>
       
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>1573</span>
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>110</span>
     </div>
   </div>
 </section>
     <section class="main">
       <section class="content">
-        <ul>
-<li><p>阅读服务条款</p>
-</li>
-<li><p>是否同意 certbot 提供方发送邮件给你</p>
-</li>
-<li><p>在域名提供商 dns 解析模板添加 txt 解析</p>
-</li>
-<li><p>在服务器或者电脑上安装 git</p>
-</li>
-<li><p>拉取仓库<code> git clone https://github.com/certbot/certbot.git</code></p>
-</li>
-<li><p>进入 certbot 目录执行一下命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./certbot-auto certonly  -d zenglbg.com --manual --preferred-challenges dns --server https://acme-v02.api.letsencrypt.org/directory</span><br></pre></td></tr></table></figure></li>
-<li><p>输入邮箱地址</p>
-</li>
-</ul>
-<blockquote>
-<p>必须在供应商 dns 解析模块添加 txt 解析后才能确认<br>类型为 txt<br>主机为_acme-challenge<br>txt 值为上图圈起来字符串<br>通过<code>dig -t txt _acme-challenge.zenglbg.com @8.8.8.8</code>查看 txt 解析是否生效,圈文字与上图圈中文字相同即可回车<img    class="lazyload" data-original="/content/images/2020/12/--2020-12-09---10.46.57.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">--2020-12-09---10.46.57</span></p>
-</blockquote>
-<ul>
-<li>回车后即可完成证书的创建</li>
-<li>添加证书目录映射<code>/etc/letsencrypt:/etc/letsencrypt</code></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># docker-compose-yaml</span><br><span class="line">services:</span><br><span class="line">  nginx:</span><br><span class="line">    build:</span><br><span class="line">      context: ./nginx</span><br><span class="line">    volumes:</span><br><span class="line">      - /etc/letsencrypt:/etc/letsencrypt</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>配置 nginx.conf</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name  zenglbg.com;</span><br><span class="line">    return       301 https://zenglbg.com$request_uri;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">    listen 443 ssl;</span><br><span class="line">    server_name  zenglbg.com;</span><br><span class="line"></span><br><span class="line">    ssl_certificate /etc/letsencrypt/live/zenglbg.com/fullchain.pem;</span><br><span class="line">    ssl_certificate_key /etc/letsencrypt/live/zenglbg.com/privkey.pem;</span><br><span class="line">    ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;</span><br><span class="line">    ssl_ciphers         HIGH:!aNULL:!MD5;</span><br><span class="line"></span><br><span class="line">    access_log   /var/log/nginx/ghost.log;</span><br><span class="line">    error_log    /var/log/nginx/ghost_error.log;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">        proxy_set_header HOST $http_host;</span><br><span class="line">        proxy_set_header X-NginX-Proxy true;</span><br><span class="line">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">        proxy_set_header X-Forwarded-Proto $scheme;</span><br><span class="line"></span><br><span class="line">        proxy_pass http://127.0.0.1:2368;</span><br><span class="line">        proxy_redirect off;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <p>姓名：zeng lbg<br>email：<a href="mailto:&#x7a;&#x65;&#110;&#x67;&#x6c;&#98;&#103;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#109;">&#x7a;&#x65;&#110;&#x67;&#x6c;&#98;&#103;&#x40;&#113;&#x71;&#x2e;&#99;&#111;&#109;</a><br>热爱代码，热爱生活。</p>
 
       </section>
       <section class="extra">
@@ -236,7 +205,7 @@
           <ul class="copyright">
   
     <li><strong>本文作者：</strong>zeng lbg</li>
-    <li><strong>本文链接：</strong><a href="http://zenglbg.com/2021/07/27/docker-nginx/index.html" title="http:&#x2F;&#x2F;zenglbg.com&#x2F;2021&#x2F;07&#x2F;27&#x2F;docker-nginx&#x2F;index.html">http:&#x2F;&#x2F;zenglbg.com&#x2F;2021&#x2F;07&#x2F;27&#x2F;docker-nginx&#x2F;index.html</a></li>
+    <li><strong>本文链接：</strong><a href="http://zenglbg.com/about/index.html" title="http:&#x2F;&#x2F;zenglbg.com&#x2F;about&#x2F;index.html">http:&#x2F;&#x2F;zenglbg.com&#x2F;about&#x2F;index.html</a></li>
     <li><strong>版权声明：</strong>本博客所有文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" title="BY-NC-SA" target="_blank" rel="noopener">BY-NC-SA</a> 许可协议，转载请注明出处！</li>
   
 </ul>
@@ -253,14 +222,7 @@
 </section>
         
         
-  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/flutter/" rel="tag">flutter</a></li></ul> 
-
         
-  <nav class="nav">
-    <a href="/2021/07/27/html-table/"><i class="iconfont iconleft"></i>HTML细线表格</a>
-    <a href="/2021/07/26/hello-world/">Hello World<i class="iconfont iconright"></i></a>
-  </nav>
-
       </section>
       
     </section>
