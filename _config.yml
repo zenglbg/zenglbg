@@ -3,17 +3,36 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ""
-description: ""
+title: 圈圈-zenglbg
+subtitle: "圈圈, zenglbg, 圈圈的技术博客。"
+description: "这是一个关于前端，flutter，nodejs, vue, react的技术分享博客"
 keywords:
+  [
+    圈圈,
+    zenglbg,
+    前端,
+    flutter,
+    nodejs,
+    dart,
+    javascript,
+    vue,
+    react,
+    vuex,
+    next,
+    nuxt,
+    nest,
+    webpack,
+    rxjs,
+  ]
 author: zeng lbg
-language: en
-timezone: ""
+language:
+  - en
+  - zh
+timezone: "GMT+8"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://zenglbg.com
+url: https://zenglbg.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -98,6 +117,14 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+Plugins:
+  - hexo-generator-baidu-sitemap
+  - hexo-generator-sitemap
+baidusitemap:
+  path: baidusitemap.xml
+sitemap:
+  path: sitemap.xml
+
 theme: zhaoo
 
 # Deployment
