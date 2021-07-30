@@ -255,7 +255,7 @@ seo:
 
 # Analytics
 analytics:
-  baidu: # id
+  baidu: f98d7ea67325063ba3725e09132c0286 # id
   google: GTM-NSGWPHS # id
   tencent: # id
   cnzz: # id
