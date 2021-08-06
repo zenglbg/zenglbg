@@ -25,7 +25,7 @@ vue create test
 
 将`src`中的文件移动至`src/pages/index`中
 
-![目录接口示意图](https://pic.zenglbg.com/images/vue/2021-08-06 5.32.54.png)
+<img src="https://pic.zenglbg.com/images/vue/2021-08-06 5.32.54.png" alt="整理项目结构示意图" />
 
 ## 调整webpack配置
 
@@ -103,5 +103,7 @@ runBuild();
 
 在package.json 中新建npm命令` "bd": "rm -rf dist && node script/build.js",`
 
-![](https://pic.zenglbg.com/images/vue/2021-08-06 5.39.21.png)
+<img src="https://pic.zenglbg.com/images/vue/2021-08-06 5.39.21.png" alt="命令添加示意图" />
+
+
 
