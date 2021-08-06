@@ -1,5 +1,6 @@
 # 前端入门到精通flutter
 
+> 附上我联系的flutter的dome代码 [dart dome](https://github.com/zenglbg/dart.git)
 ## dart 语法资源
 
 1. [Dart语言之从入门到放弃（万字长文）](https://juejin.cn/post/6844904154062667789#heading-2)
