@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zenglbg.com/2021/08/06/vue/vue-guide/</loc>
+    
+    <lastmod>2021-08-06</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zenglbg.com/2021/07/29/mapkey/vscode-mapkey/</loc>
     
     <lastmod>2021-08-06</lastmod>
@@ -52,13 +59,6 @@
   
   <url>
     <loc>https://zenglbg.com/2021/07/27/android-style/</loc>
-    
-    <lastmod>2021-08-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zenglbg.com/2021/08/06/vue/vue-guide/</loc>
     
     <lastmod>2021-08-06</lastmod>
     
@@ -185,6 +185,34 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://zenglbg.com/tags/vue/</loc>
+    <lastmod>2021-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zenglbg.com/tags/webpack/</loc>
+    <lastmod>2021-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zenglbg.com/tags/javascript/</loc>
+    <lastmod>2021-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zenglbg.com/tags/typescript/</loc>
+    <lastmod>2021-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -231,6 +259,13 @@
   
   <url>
     <loc>https://zenglbg.com/categories/hexo/</loc>
+    <lastmod>2021-08-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zenglbg.com/categories/vue/</loc>
     <lastmod>2021-08-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
