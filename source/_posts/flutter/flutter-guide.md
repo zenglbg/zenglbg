@@ -1,3 +1,15 @@
+---
+title: 前端入门到精通flutter
+tags: [flutter, dart]
+categories:
+  - flutter
+comments:
+  - true
+keywords: zenglbg, flutter, dart
+image: https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.21 (1).jpeg
+---
+
+
 # 前端入门到精通flutter
 
 > 附上我联系的flutter的dome代码 [dart dome](https://github.com/zenglbg/dart.git)
