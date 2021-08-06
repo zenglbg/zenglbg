@@ -4,6 +4,9 @@ categories:
   - flutter
 tags:
   - flutter
+image: https://pic.zenglbg.com/images/girl/girl3/photo_2021-08-06 14.26.45.jpeg
+
+
 ---
 
 这段代码定义了 border = 1px 的表格，但实际上表格的实际边框宽度为 2px, 这是因为表格边框由：表格外边框和单元格边框两部分构成。

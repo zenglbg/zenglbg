@@ -4,6 +4,8 @@ categories:
   - android
 tags:
   - android
+image: https://pic.zenglbg.com/images/girl/girl3/photo_2021-08-06 14.26.47.jpeg
+
 ---
 
 # android 环境配置

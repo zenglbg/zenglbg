@@ -4,6 +4,9 @@ categories:
   - python
 tags:
   - python
+image: https://pic.zenglbg.com/images/girl/girl3/photo_2021-08-06 14.26.51.jpeg
+
+
 ---
 
 将 python 的文件系统、路径操作 API 详细的学习了一下，代码都是测试过的，也许很简单，但为了打好基础，还是要有点一丝不苟的精神，希望对你有用……
