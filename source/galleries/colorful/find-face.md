@@ -1,6 +1,8 @@
 ---
 title: 遗忘
-image: https://pic.zenglbg.com/images/girl/girl3/photo_2021-08-06 14.26.50.jpeg
+image: https://pic.zenglbg.com/images/girl/girl3/photo_2021-08-06 14.26.59 (1).jpeg
+
+
 ---
 
 近来记性每下愈况，常常丢三落四、说东忘西，尽管在过去的无数个日子我已经做好了万全的准备、形色的便签填满了房间的墙面、各式样的照片散布在柜子和窗边，可我还是没有预料到最终的遗忘竟然来的如此之快，我是谁？
