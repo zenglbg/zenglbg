@@ -25,6 +25,7 @@ photos:
 [文章图片 1](https://www.pexels.com/)
 [文章图片 2](https://pixabay.com/)
 [文章图片 3](https://imgur.com/)
+[文章图片 4](https://undraw.co/illustrations)
 
 ## 配置文章图片
 
