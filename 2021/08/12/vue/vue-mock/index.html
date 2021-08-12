@@ -1,0 +1,427 @@
+
+
+<!DOCTYPE html>
+<html lang="en,zh,default" color-mode=light>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="baidu-site-verification" content="code-oM47v16a1e" />
+  <title>vue中使用mockjs最完美方案 - 圈圈-zenglbg</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="google" content="notranslate" />
+  <meta name="keywords" content="圈圈,zenglbg,前端,flutter,nodejs,dart,javascript,vue,react,vuex,next,nuxt,nest,webpack,rxjs, zenglbg, vue,  webpack, javascript, node, mockjs">
+  <meta name="description" content="vue中使用mockjs最完美方案我们开发常遇到后端接...">
+  <meta name="author" content="zeng lbg">
+  <link rel="icon" href="/images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="/images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" sizes="180x180">
+  <meta rel="mask-icon" href="/images/icons/stun-logo.svg" color="#333333">
+  
+    <meta rel="msapplication-TileImage" content="/images/icons/favicon-144x144.png">
+    <meta rel="msapplication-TileColor" content="#000000">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+    
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1445822_r673sha78lq.css">
+
+  
+
+  
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  
+
+  
+    
+      
+        
+        
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/xcode.min.css" name="highlight-style" mode="light">
+
+      
+        
+        
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/solarized-dark.min.css" name="highlight-style" mode="dark">
+
+      
+  
+
+  <script>
+    var CONFIG = window.CONFIG || {};
+    var ZHAOO = window.ZHAOO || {};
+    CONFIG = {
+      isHome: false,
+      fancybox: true,
+      pjax: false,
+      lazyload: {
+        enable: true,
+        only_post: 'false',
+        loading: '[object Object]'
+      },
+      donate: {
+        enable: true,
+        alipay: 'https://pic.zenglbg.com/images/ali-pay.JPG',
+        wechat: 'https://pic.zenglbg.com/images/wechat-pay.PNG'
+      },
+      galleries: {
+        enable: true
+      },
+      fab: {
+        enable: true,
+        always_show: false
+      },
+      carrier: {
+        enable: true
+      },
+      daovoice: {
+        enable: false
+      },
+      preview: {
+        background: {
+          default: '',
+          api: ''
+        },
+        motto: {
+          default: '我在开了灯的床头下，想问问自己的心啊。',
+          typing: true,
+          api: 'https://v2.jinrishici.com/one.json',
+          data_contents: '["data","content"]'
+        },
+      },
+      qrcode: {
+        enable: true,
+        type: 'url',
+        image: 'https://pic.zenglbg.com/images/wechat-pay.PNG',
+      },
+      toc: {
+        enable: true
+      },
+      scrollbar: {
+        type: 'default'
+      },
+      notification: {
+        enable: false,
+        delay: 4500,
+        list: '',
+        page_white_list: '',
+        page_black_list: ''
+      },
+      search: {
+        enable: false,
+        path: ''
+      }
+    }
+  </script>
+
+  
+
+  
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="lock-screen">
+  <div class="loading"></div>
+  
+    
+
+
+  <nav class="navbar">
+    <div class="left">
+      
+        <i class="iconfont iconhome j-navbar-back-home"></i>
+      
+      
+        <i class="iconfont iconqrcode j-navbar-qrcode"></i>
+      
+      
+        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
+      
+      
+    </div>
+    <div class="center">vue中使用mockjs最完美方案</div>
+    <div class="right">
+      <i class="iconfont iconmenu j-navbar-menu"></i>
+    </div>
+    
+      <div id="qrcode-navbar"></div>
+    
+  </nav>
+
+  
+  
+
+<nav class="menu">
+  <div class="menu-container">
+    <div class="menu-close">
+      <i class="iconfont iconbaseline-close-px"></i>
+    </div>
+    <ul class="menu-content"><li class="menu-item">
+        <a href="/ " class="underline "> 首页</a>
+      </li><li class="menu-item">
+        <a href="/galleries/ " class="underline "> 摄影</a>
+      </li><li class="menu-item">
+        <a href="/archives/ " class="underline "> 归档</a>
+      </li><li class="menu-item">
+        <a href="/tags/ " class="underline "> 标签</a>
+      </li><li class="menu-item">
+        <a href="/categories/ " class="underline "> 分类</a>
+      </li><li class="menu-item">
+        <a href="/about/ " class="underline "> 关于</a>
+      </li></ul>
+    
+      <div class="menu-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/zenglbg">圈圈</a></p></div>
+    
+  </div>
+</nav>
+  <main id="main">
+  <div class="article-wrap">
+    <div class="row container">
+      <div class="col-xl-3"></div>
+      <div class="col-xl-6"><article class="article">
+  <div class="wrap">
+    <section class="head">
+  <img   class="lazyload" data-original="https://pic.zenglbg.com/images/girl/girl4/photo_2021-08-11%2011.05.45.jpeg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title">vue中使用mockjs最完美方案</h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>August 12, 2021</span>
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>7072</span>
+    </div>
+  </div>
+</section>
+    <section class="main">
+      <section class="content">
+        <h1 id="vue中使用mockjs最完美方案"><a href="#vue中使用mockjs最完美方案" class="headerlink" title="vue中使用mockjs最完美方案"></a>vue中使用mockjs最完美方案</h1><p>我们开发常遇到后端接口没有开发完成，单给出了接口文档这种情况。我们可以使用mockjs自己启动服务完成接口对接。</p>
+<p>常用mock资源</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://mockjs.com/examples.html">中文官网示例</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/nuysoft/Mock/tree/refactoring">官方代码github</a></li>
+</ul>
+<h2 id="第一步-安装依赖"><a href="#第一步-安装依赖" class="headerlink" title="第一步 安装依赖"></a>第一步 安装依赖</h2><p>安装mockjs制造数据。body-parser 处理post请求。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yarn add -D body-parser mockjs chokidar chalk</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> npm i -D body-parser mockjs</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="第二步-新建mockjs-server"><a href="#第二步-新建mockjs-server" class="headerlink" title="第二步 新建mockjs-server"></a>第二步 新建mockjs-server</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// mock/mockjs-server</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function">(<span class="params">app</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&#x27;打印express实例&#x27;</span>, app)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="第三步-使用mockjs-server"><a href="#第三步-使用mockjs-server" class="headerlink" title="第三步 使用mockjs-server"></a>第三步 使用mockjs-server</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// vue.config.js</span></span><br><span class="line"><span class="comment">// 在vue.config.js中配置node服务devServer启动前执行的中间件</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    <span class="attr">devServer</span>:&#123;</span><br><span class="line">          <span class="attr">before</span>: <span class="built_in">require</span>(<span class="string">&quot;./mock/mock-server.js&quot;</span>),</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="第四步-完善mockjs-server"><a href="#第四步-完善mockjs-server" class="headerlink" title="第四步 完善mockjs-server"></a>第四步 完善mockjs-server</h2><ol>
+<li>对post请求的请求体进行解析</li>
+<li>注册mockjs请求api地址</li>
+<li>使用chokidar对mock目录进行文件变化监控</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// mock/mockjs-server</span></span><br><span class="line"><span class="keyword">const</span> chokidar = <span class="built_in">require</span>(<span class="string">&quot;chokidar&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> bodyParser = <span class="built_in">require</span>(<span class="string">&quot;body-parser&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> chalk = <span class="built_in">require</span>(<span class="string">&quot;chalk&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&quot;path&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> Mock = <span class="built_in">require</span>(<span class="string">&quot;mockjs&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> mockDir = path.join(process.cwd(), <span class="string">&quot;mock&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 注册mockjs请求api地址的函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">registerRoutes</span>(<span class="params">app</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> mockLastIndex;</span><br><span class="line">  <span class="keyword">const</span> &#123;mocks&#125; = <span class="built_in">require</span>(<span class="string">&#x27;./index.js&#x27;</span>);</span><br><span class="line">  <span class="keyword">const</span> mocksForServer = mocks.map(<span class="function"><span class="params">route</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 适配器-对mocks接口数据进行适配</span></span><br><span class="line">    <span class="keyword">return</span> responseFake(route.url, route.type, route.response);</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">const</span> mock <span class="keyword">of</span> mocksForServer) &#123;</span><br><span class="line">    app[mock.type](mock.url, mock.response);</span><br><span class="line">    mockLastIndex = app._router.stack.length;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">const</span> mockRoutesLength = <span class="built_in">Object</span>.keys(mocksForServer).length;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    <span class="attr">mockRoutesLength</span>: mockRoutesLength,</span><br><span class="line">    <span class="attr">mockStartIndex</span>: mockLastIndex - mockRoutesLength,</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">unregisterRoutes</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">Object</span>.keys(<span class="built_in">require</span>.cache).forEach(<span class="function"><span class="params">i</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span>(i.includes(mockDir)) &#123;</span><br><span class="line">      <span class="keyword">delete</span> <span class="built_in">require</span>.cache[<span class="built_in">require</span>.resolve(i)]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">responseFake</span>(<span class="params">url, type, respond</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    <span class="comment">// 添加环境变量——请求的url</span></span><br><span class="line">    <span class="attr">url</span>: <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">`<span class="subst">$&#123;process.env.VUE_APP_BASE_API&#125;</span><span class="subst">$&#123;url&#125;</span>`</span>),</span><br><span class="line">    <span class="attr">type</span>: type || <span class="string">&#x27;get&#x27;</span>,</span><br><span class="line">    <span class="function"><span class="title">response</span>(<span class="params">req, res</span>)</span> &#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&quot;request invoke:&quot;</span> + req.path);</span><br><span class="line">      res.json(Mock.mock(respond <span class="keyword">instanceof</span> <span class="built_in">Function</span> ? respond(req, res) : respond));</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function">(<span class="params">app</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&#x27;打印express实例&#x27;</span>, app)</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 1. </span></span><br><span class="line">  app.use(bodyParser.json());</span><br><span class="line">  app.use(</span><br><span class="line">    bodyParser.urlencoded(&#123;</span><br><span class="line">      <span class="attr">extended</span>: <span class="literal">true</span>,</span><br><span class="line">    &#125;)</span><br><span class="line">  );</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 2. </span></span><br><span class="line">  <span class="keyword">const</span> mockRoutes = registerRoutes(app);</span><br><span class="line">  <span class="keyword">var</span> mockRoutesLength = mockRoutes.mockRoutesLength;</span><br><span class="line">  <span class="keyword">var</span> mockStartIndex = mockRoutes.mockStartIndex;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 3. </span></span><br><span class="line">  chokidar</span><br><span class="line">  	.watch(mockDir, &#123;</span><br><span class="line">    	<span class="attr">ignored</span>: <span class="regexp">/mockjs-server/</span>,</span><br><span class="line">    	ignoreInitial: <span class="literal">true</span>,</span><br><span class="line">  &#125;).on(<span class="string">&#x27;all&#x27;</span>, <span class="function">(<span class="params">event, path</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (event === <span class="string">&quot;change&quot;</span> || event === <span class="string">&quot;add&quot;</span>) &#123;</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">          <span class="comment">// 请求mock路由栈</span></span><br><span class="line">          app._router.stack.splice(mockStartIndex, mockRoutesLength);</span><br><span class="line"></span><br><span class="line">          <span class="comment">// 清除路由缓存</span></span><br><span class="line">          unregisterRoutes();</span><br><span class="line"></span><br><span class="line">          <span class="keyword">const</span> mockRoutes = registerRoutes(app);</span><br><span class="line">          mockRoutesLength = mockRoutes.mockRoutesLength;</span><br><span class="line">          mockStartIndex = mockRoutes.mockStartIndex;</span><br><span class="line"></span><br><span class="line">          <span class="built_in">console</span>.log(chalk.magentaBright(<span class="string">`\n &gt; Mock Server hot reload success! changed  <span class="subst">$&#123;path&#125;</span>`</span>));</span><br><span class="line">        &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">          <span class="built_in">console</span>.log(chalk.redBright(error));</span><br><span class="line">        &#125;Ï</span><br><span class="line">      </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="第五步-添加mock"><a href="#第五步-添加mock" class="headerlink" title="第五步 添加mock"></a>第五步 添加mock</h2><ol>
+<li>添加user.js 制造user数据</li>
+<li>添加mock入口index</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// mock/modules/user.js</span></span><br><span class="line"><span class="keyword">const</span> Mock = <span class="built_in">require</span>(<span class="string">&quot;mockjs&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&quot;/user/login&quot;</span>,</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;post&#x27;</span>,</span><br><span class="line">    <span class="attr">response</span>: <span class="function">(<span class="params">config</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">const</span> &#123;username&#125; = config.body;</span><br><span class="line">      <span class="keyword">if</span>(username === admin) &#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">          <span class="attr">code</span>: <span class="number">200</span>,</span><br><span class="line">          <span class="attr">data</span>: <span class="string">&#x27;token&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">          <span class="attr">code</span>: <span class="number">400</span>,</span><br><span class="line">          <span class="attr">message</span>: <span class="string">&quot;账户或密码不正确！&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&quot;/user/list&quot;</span>,</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;post&#x27;</span>,</span><br><span class="line">    <span class="attr">response</span>: <span class="function">(<span class="params">config</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">return</span> &#123;</span><br><span class="line">        <span class="attr">code</span>: <span class="number">200</span>,</span><br><span class="line">        <span class="attr">data</span>: mock(&#123;</span><br><span class="line">          <span class="string">&quot;list|10&quot;</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">              <span class="string">&quot;id|+1&quot;</span>: <span class="number">1</span>,</span><br><span class="line">              <span class="attr">username</span>: <span class="string">&quot;@string&quot;</span>,</span><br><span class="line">              <span class="attr">address</span>: <span class="string">&quot;@string&quot;</span>,</span><br><span class="line">              <span class="attr">age</span>: <span class="string">&quot;@natural(100)&quot;</span>,</span><br><span class="line">            &#125;,</span><br><span class="line">          ],</span><br><span class="line">        &#125;)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Mock = <span class="built_in">require</span>(<span class="string">&quot;mockjs&quot;</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>添加mock入口</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// mock/modules/index.js</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> Mock = <span class="built_in">require</span>(<span class="string">&quot;mockjs&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">&quot;fs&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&quot;path&quot;</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">param2Obj</span>(<span class="params">url</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> search = <span class="built_in">decodeURIComponent</span>(url.split(<span class="string">&#x27;?&#x27;</span>)[<span class="number">1</span>]).replace(<span class="regexp">/\+/g</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">  <span class="keyword">if</span> (!search) &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">const</span> obj = &#123;&#125;</span><br><span class="line">  <span class="keyword">const</span> searchArr = search.split(<span class="string">&#x27;&amp;&#x27;</span>)</span><br><span class="line">  searchArr.forEach(<span class="function"><span class="params">v</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> index = v.indexOf(<span class="string">&#x27;=&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> (index !== -<span class="number">1</span>) &#123;</span><br><span class="line">      <span class="keyword">const</span> name = v.substring(<span class="number">0</span>, index)</span><br><span class="line">      <span class="keyword">const</span> val = v.substring(index + <span class="number">1</span>, v.length)</span><br><span class="line">      obj[name] = val</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="keyword">return</span> obj</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 自动注册所有在modules中的mock文件</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getMocks</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> urls = fs.readdirSync(path.resolve(__dirname, <span class="string">&quot;./modules&quot;</span>)).reduce(<span class="function">(<span class="params">acc, curr</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> data = <span class="built_in">require</span>(path.resolve(__dirname, <span class="string">`./modules/<span class="subst">$&#123;curr&#125;</span>`</span>));</span><br><span class="line">    acc = acc.concat(data);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> acc;</span><br><span class="line">  &#125;, []);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> mocks = getMocks();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">mockXHR</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// mock patch</span></span><br><span class="line">  <span class="comment">// https://github.com/nuysoft/Mock/issues/300</span></span><br><span class="line">  Mock.XHR.prototype.proxy_send = Mock.XHR.prototype.send;</span><br><span class="line">  Mock.XHR.prototype.send = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">this</span>.custom.xhr) &#123;</span><br><span class="line">      <span class="built_in">this</span>.custom.xhr.withCredentials = <span class="built_in">this</span>.withCredentials || <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">if</span> (<span class="built_in">this</span>.responseType) &#123;</span><br><span class="line">        <span class="built_in">this</span>.custom.xhr.responseType = <span class="built_in">this</span>.responseType;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">this</span>.proxy_send(...arguments);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">XHR2ExpressReqWrap</span>(<span class="params">respond</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">options</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">let</span> result = <span class="literal">null</span>;</span><br><span class="line">      <span class="keyword">if</span> (respond <span class="keyword">instanceof</span> <span class="built_in">Function</span>) &#123;</span><br><span class="line">        <span class="keyword">const</span> &#123; body, type, url &#125; = options;</span><br><span class="line">        <span class="comment">// https://expressjs.com/en/4x/api.html#req</span></span><br><span class="line">        result = respond(&#123;</span><br><span class="line">          <span class="attr">method</span>: type,</span><br><span class="line">          <span class="attr">body</span>: <span class="built_in">JSON</span>.parse(body),</span><br><span class="line">          <span class="attr">query</span>: param2Obj(url),</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        result = respond;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">return</span> Mock.mock(result);</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">const</span> i <span class="keyword">of</span> mocks) &#123;</span><br><span class="line">    Mock.mock(<span class="keyword">new</span> <span class="built_in">RegExp</span>(i.url), i.type || <span class="string">&quot;get&quot;</span>, XHR2ExpressReqWrap(i.response));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  mocks,</span><br><span class="line">  mockXHR,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="第六步添加环境变量文件-env-development"><a href="#第六步添加环境变量文件-env-development" class="headerlink" title="第六步添加环境变量文件.env.development"></a>第六步添加环境变量文件.env.development</h2><blockquote>
+<p>我们在mockjs-server使用了环境变量<code>VUE_APP_BASE_API</code>。通过在vue项目根目录中新建.env.development文件，vue将自动注入该环境变量。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">## .env.development</span><br><span class="line"></span><br><span class="line">NODE_ENV=development</span><br><span class="line"></span><br><span class="line"># base api</span><br><span class="line">VUE_APP_BASE_API=/dev-api</span><br></pre></td></tr></table></figure>
+
+
+
+
+      </section>
+      <section class="extra">
+        
+          <ul class="copyright">
+  
+    <li><strong>本文作者：</strong>zeng lbg</li>
+    <li><strong>本文链接：</strong><a href="https://zenglbg.com/2021/08/12/vue/vue-mock/index.html" title="https:&#x2F;&#x2F;zenglbg.com&#x2F;2021&#x2F;08&#x2F;12&#x2F;vue&#x2F;vue-mock&#x2F;index.html">https:&#x2F;&#x2F;zenglbg.com&#x2F;2021&#x2F;08&#x2F;12&#x2F;vue&#x2F;vue-mock&#x2F;index.html</a></li>
+    <li><strong>版权声明：</strong>本博客所有文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" title="BY-NC-SA" target="_blank" rel="noopener">BY-NC-SA</a> 许可协议，转载请注明出处！</li>
+  
+</ul>
+        
+        
+          <section class="donate">
+  <div id="qrcode-donate">
+    <img   class="lazyload" data-original="https://pic.zenglbg.com/images/ali-pay.JPG" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" >
+  </div>
+  <div class="icon">
+    <a href="javascript:;" id="alipay"><i class="iconfont iconalipay"></i></a>
+    <a href="javascript:;" id="wechat"><i class="iconfont iconwechat-fill"></i></a>
+  </div>
+</section>
+        
+        
+  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mockjs/" rel="tag">mockjs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/" rel="tag">node</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webpack/" rel="tag">webpack</a></li></ul> 
+
+        
+  <nav class="nav">
+    <a></a>
+    <a href="/2021/08/06/vue/vue-guide/">vue 多页面开发构建独立项目<i class="iconfont iconright"></i></a>
+  </nav>
+
+      </section>
+      
+    </section>
+  </div>
+</article></div>
+      <div class="col-xl-3">
+        
+          
+  <aside class="toc-wrap">
+    <h3 class="toc-title">文章目录：</h3>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#vue%E4%B8%AD%E4%BD%BF%E7%94%A8mockjs%E6%9C%80%E5%AE%8C%E7%BE%8E%E6%96%B9%E6%A1%88"><span class="toc-text">vue中使用mockjs最完美方案</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="toc-text">第一步 安装依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5-%E6%96%B0%E5%BB%BAmockjs-server"><span class="toc-text">第二步 新建mockjs-server</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5-%E4%BD%BF%E7%94%A8mockjs-server"><span class="toc-text">第三步 使用mockjs-server</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5-%E5%AE%8C%E5%96%84mockjs-server"><span class="toc-text">第四步 完善mockjs-server</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5-%E6%B7%BB%E5%8A%A0mock"><span class="toc-text">第五步 添加mock</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E6%AD%A5%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E6%96%87%E4%BB%B6-env-development"><span class="toc-text">第六步添加环境变量文件.env.development</span></a></li></ol></li></ol>
+  </aside>
+
+        
+      </div>
+    </div>
+  </div>
+</main>
+  
+
+<footer class="footer">
+  <div class="footer-social"><a 
+        href="tencent://message/?Menu=yes&uin=97621191 "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#12B7F5'" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconQQ "></i>
+      </a><a 
+        href="https://u.wechat.com/MLyshTgghEo84o1kpZcyWdg "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#09BB07'" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconwechat-fill "></i>
+      </a><a 
+        href="https://www.instagram.com/zenglbg/ "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#DA2E76'" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconinstagram "></i>
+      </a><a 
+        href="https://github.com/zenglbg "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#9f7be1'" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  icongithub-fill "></i>
+      </a><a 
+        href="mailto:zzzibm@163.com "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color=#FF3B00" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconmail"></i>
+      </a></div>
+  
+    <div class="footer-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/zenglbg">圈圈</a></p></div>
+  
+</footer>
+  
+      <div class="fab fab-plus">
+    <i class="iconfont iconplus"></i>
+  </div>
+  
+  
+  <div class="fab fab-up">
+    <i class="iconfont iconcaret-up"></i>
+  </div>
+  
+  
+  
+    
+<script src="/js/color-mode.js"></script>
+
+  
+  
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+  
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+
+
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+  
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+
+
+
+
+<script src="/js/utils.js"></script>
+<script src="/js/script.js"></script>
+
+
+
+
+
+
+
+  <script>
+    (function () {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+  <script defer src='https://hm.baidu.com/hm.js?f98d7ea67325063ba3725e09132c0286'></script>
+
+
+
+
+
+  <script>
+    window.ga = window.ga || function () {
+      (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
+    ga('create', 'GTM-NSGWPHS', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script defer src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</html>
