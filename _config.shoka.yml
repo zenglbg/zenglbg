@@ -38,10 +38,10 @@ loader:
 fireworks:
   enable: true
   color:
-    # - "rgba(222,184,135,.9)"
-    # - "rgba(255,235,205,.9)"
-    # - "rgba(187,222,214,.9)"
-    # - "rgba(138,198,209,.9)"
+    - "rgba(210,240,244,.9)"
+    - "rgba(211,224,243,.9)"
+    - "rgba(76,141,174,.9)"
+    - "rgba(237,209,216,.9)"
 
 font:
   enable: true
@@ -111,8 +111,8 @@ social:
   zhihu: https://www.zhihu.com/people/zenglbg || zhihu || "#1e88e5"
   music: https://music.163.com/#/user/home?id=yourid || cloud-music || "#e60026"
   weibo: https://weibo.com/zenglbg || weibo || "#ea716e"
-  about: https://about.me/zenglbg || address-card || "#3b5998"
-  email: mailto:zenglbg@mail.com || envelope || "#55acd5"
+  about: https://about.me/zenglbg || address-card || "##30dff3"
+  email: mailto:zenglbg@mail.com || envelope || "#F3D3E7"
   facebook: https://www.facebook.com/zenglbg || facebook
   stackoverflow: https://stackoverflow.com/zenglbg || stack-overflow
   youtube: https://youtube.com/zenglbg || youtube
@@ -139,7 +139,7 @@ footer:
   icon:
     name: sakura rotate
     # Change the color of icon, using Hex Code.
-    color: "#ffebcd"
+    color: "#88ada6"
   # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
   count: false
   powered: true
@@ -162,8 +162,8 @@ tagcloud:
   # All values below are same as default, change them by yourself.
   min: 16 # Minimun font size in px
   max: 22 # Maxium font size in px
-  start: "#ffebcd" # Start color (hex, rgba, hsla or color keywords)
-  end: "#55acd5" # End color (hex, rgba, hsla or color keywords)
+  start: "#88ada6" # Start color (hex, rgba, hsla or color keywords)
+  end: "#F3D3E7" # End color (hex, rgba, hsla or color keywords)
   amount: 200 # Amount of tags, change it if you have more than 200 tags
 
 # ---------------------------------------------------------------
