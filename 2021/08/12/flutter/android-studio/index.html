@@ -1,389 +1,520 @@
 
 
+
+
 <!DOCTYPE html>
-<html lang="en,zh,default" color-mode=light>
+<html lang="en,zh,default">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="baidu-site-verification" content="code-oM47v16a1e" />
-  <title>android studio Preview 在m1芯片的mac上无法打开终端 - 圈圈-zenglbg</title>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="google" content="notranslate" />
-  <meta name="keywords" content="圈圈,zenglbg,前端,flutter,nodejs,dart,javascript,vue,react,vuex,next,nuxt,nest,webpack,rxjs, zenglbg, flutter, dart">
-  <meta name="description" content="android studio Preview 在m1芯...">
-  <meta name="author" content="zeng lbg">
-  <link rel="icon" href="/images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
-  <link rel="icon" href="/images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" sizes="180x180">
-  <meta rel="mask-icon" href="/images/icons/stun-logo.svg" color="#333333">
-  
-    <meta rel="msapplication-TileImage" content="/images/icons/favicon-144x144.png">
-    <meta rel="msapplication-TileColor" content="#000000">
-  
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/imageshttps:/pic.zenglbg.com/images/blog/icon-logo/lbg.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="圈圈-zenglbg" href="https://zenglbg.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="圈圈-zenglbg" href="https://zenglbg.com/atom.xml" />
+<link rel="alternate" type="application/json" title="圈圈-zenglbg" href="https://zenglbg.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
-<link rel="stylesheet" href="/css/style.css">
+  <meta name="keywords" content="zenglbg, flutter, dart" />
 
 
-  
-    
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1445822_r673sha78lq.css">
+<link rel="canonical" href="https://zenglbg.com/2021/08/12/flutter/android-studio/">
 
-  
 
-  
-    
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 
-  
-
-  
-    
-      
-        
-        
-<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/xcode.min.css" name="highlight-style" mode="light">
-
-      
-        
-        
-<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/solarized-dark.min.css" name="highlight-style" mode="dark">
-
-      
-  
-
-  <script>
-    var CONFIG = window.CONFIG || {};
-    var ZHAOO = window.ZHAOO || {};
-    CONFIG = {
-      isHome: false,
-      fancybox: true,
-      pjax: false,
-      lazyload: {
-        enable: true,
-        only_post: 'false',
-        loading: '[object Object]'
-      },
-      donate: {
-        enable: true,
-        alipay: 'https://pic.zenglbg.com/images/ali-pay.JPG',
-        wechat: 'https://pic.zenglbg.com/images/wechat-pay.PNG'
-      },
-      galleries: {
-        enable: true
-      },
-      fab: {
-        enable: true,
-        always_show: false
-      },
-      carrier: {
-        enable: true
-      },
-      daovoice: {
-        enable: false
-      },
-      preview: {
-        background: {
-          default: '',
-          api: ''
-        },
-        motto: {
-          default: '我在开了灯的床头下，想问问自己的心啊。',
-          typing: true,
-          api: 'https://v2.jinrishici.com/one.json',
-          data_contents: '["data","content"]'
-        },
-      },
-      qrcode: {
-        enable: true,
-        type: 'url',
-        image: 'https://pic.zenglbg.com/images/wechat-pay.PNG',
-      },
-      toc: {
-        enable: true
-      },
-      scrollbar: {
-        type: 'default'
-      },
-      notification: {
-        enable: false,
-        delay: 4500,
-        list: '',
-        page_white_list: '',
-        page_black_list: ''
-      },
-      search: {
-        enable: false,
-        path: ''
-      }
-    }
-  </script>
-
-  
-
-  
-
+  <title>
+android studio Preview 在m1芯片的mac上无法打开终端 - flutter |
+圈圈-zenglbg = 圈圈-zenglbg = 圈圈, zenglbg, 圈圈的技术博客。</title>
 <meta name="generator" content="Hexo 5.4.0"></head>
-
-<body class="lock-screen">
-  <div class="loading"></div>
-  
-    
-
-
-  <nav class="navbar">
-    <div class="left">
-      
-        <i class="iconfont iconhome j-navbar-back-home"></i>
-      
-      
-        <i class="iconfont iconqrcode j-navbar-qrcode"></i>
-      
-      
-        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
-      
-      
-    </div>
-    <div class="center">android studio Preview 在m1芯片的mac上无法打开终端</div>
-    <div class="right">
-      <i class="iconfont iconmenu j-navbar-menu"></i>
-    </div>
-    
-      <div id="qrcode-navbar"></div>
-    
-  </nav>
-
-  
-  
-
-<nav class="menu">
-  <div class="menu-container">
-    <div class="menu-close">
-      <i class="iconfont iconbaseline-close-px"></i>
-    </div>
-    <ul class="menu-content"><li class="menu-item">
-        <a href="/ " class="underline "> 首页</a>
-      </li><li class="menu-item">
-        <a href="/galleries/ " class="underline "> 摄影</a>
-      </li><li class="menu-item">
-        <a href="/archives/ " class="underline "> 归档</a>
-      </li><li class="menu-item">
-        <a href="/tags/ " class="underline "> 标签</a>
-      </li><li class="menu-item">
-        <a href="/categories/ " class="underline "> 分类</a>
-      </li><li class="menu-item">
-        <a href="/about/ " class="underline "> 关于</a>
-      </li></ul>
-    
-      <div class="menu-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/zenglbg">圈圈</a></p></div>
-    
-  </div>
-</nav>
-  <main id="main">
-  <div class="article-wrap">
-    <div class="row container">
-      <div class="col-xl-3"></div>
-      <div class="col-xl-6"><article class="article">
-  <div class="wrap">
-    <section class="head">
-  <img   class="lazyload" data-original="https://pic.zenglbg.com/images/girl/girl4/photo_2021-08-11%2011.05.49.jpeg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
-  <div class="head-mask">
-    <h1 class="head-title">android studio Preview 在m1芯片的mac上无法打开终端</h1>
-    <div class="head-info">
-      <span class="post-info-item"><i class="iconfont iconcalendar"></i>August 12, 2021</span>
-      
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>563</span>
-    </div>
-  </div>
-</section>
-    <section class="main">
-      <section class="content">
-        <h1 id="android-studio-Preview-在m1芯片的mac上无法打开终端"><a href="#android-studio-Preview-在m1芯片的mac上无法打开终端" class="headerlink" title="android studio Preview 在m1芯片的mac上无法打开终端"></a>android studio Preview 在m1芯片的mac上无法打开终端</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>android studio Preview 在m1芯片的mac上打开终端报错，错误显示：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Cannot open Local Terminal</span><br><span class="line">Failed to start [/bin/bash, --rcfile, /Applications/Android Studio.app/Contents/plugins/terminal/jediterm-bash.in, -i] in /Users/&#123;UserName&#125;/Android</span><br><span class="line">See your idea.log (Help | Show Log in Finder) for the details.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="处理"><a href="#处理" class="headerlink" title="处理"></a>处理</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/JetBrains/pty4j.git</span><br><span class="line">cd pty4j/native</span><br><span class="line">clang -fPIC -c *.c</span><br><span class="line">clang -shared -o libpty.dylib *.o</span><br><span class="line">cp libpty.dylib &quot;/Applications/Android Studio Preview.app/Contents/lib/pty4j-native/darwin/&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-      </section>
-      <section class="extra">
-        
-          <ul class="copyright">
-  
-    <li><strong>本文作者：</strong>zeng lbg</li>
-    <li><strong>本文链接：</strong><a href="https://zenglbg.com/2021/08/12/flutter/android-studio/index.html" title="https:&#x2F;&#x2F;zenglbg.com&#x2F;2021&#x2F;08&#x2F;12&#x2F;flutter&#x2F;android-studio&#x2F;index.html">https:&#x2F;&#x2F;zenglbg.com&#x2F;2021&#x2F;08&#x2F;12&#x2F;flutter&#x2F;android-studio&#x2F;index.html</a></li>
-    <li><strong>版权声明：</strong>本博客所有文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" title="BY-NC-SA" target="_blank" rel="noopener">BY-NC-SA</a> 许可协议，转载请注明出处！</li>
-  
-</ul>
-        
-        
-          <section class="donate">
-  <div id="qrcode-donate">
-    <img   class="lazyload" data-original="https://pic.zenglbg.com/images/ali-pay.JPG" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" >
-  </div>
-  <div class="icon">
-    <a href="javascript:;" id="alipay"><i class="iconfont iconalipay"></i></a>
-    <a href="javascript:;" id="wechat"><i class="iconfont iconwechat-fill"></i></a>
-  </div>
-</section>
-        
-        
-  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/dart/" rel="tag">dart</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flutter/" rel="tag">flutter</a></li></ul> 
-
-        
-  <nav class="nav">
-    <a></a>
-    <a href="/2021/08/12/vue/vue-mock/">vue中使用mockjs最完美方案<i class="iconfont iconright"></i></a>
-  </nav>
-
-      </section>
-      
-    </section>
-  </div>
-</article></div>
-      <div class="col-xl-3">
-        
-          
-  <aside class="toc-wrap">
-    <h3 class="toc-title">文章目录：</h3>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#android-studio-Preview-%E5%9C%A8m1%E8%8A%AF%E7%89%87%E7%9A%84mac%E4%B8%8A%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E7%BB%88%E7%AB%AF"><span class="toc-text">android studio Preview 在m1芯片的mac上无法打开终端</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98"><span class="toc-text">问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%84%E7%90%86"><span class="toc-text">处理</span></a></li></ol></li></ol>
-  </aside>
-
-        
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
       </div>
     </div>
   </div>
-</main>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">android studio Preview 在m1芯片的mac上无法打开终端
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2021-08-12 20:15:45">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2021-08-12T20:15:45+08:00">2021-08-12</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">圈圈-zenglbg</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+          <img src="https://pic.zenglbg.com/images/girl/girl4/photo_2021-08-11 11.05.49.jpeg">
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/flutter/" itemprop="item" rel="index" title="In flutter"><span itemprop="name">flutter</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="https://zenglbg.com/2021/08/12/flutter/android-studio/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/images/avatar.png">
+    <meta itemprop="name" content="zeng lbg">
+    <meta itemprop="description" content="圈圈, zenglbg, 圈圈的技术博客。, 这是一个关于前端，flutter，nodejs, vue, react的技术分享博客">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="圈圈-zenglbg">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="android-studio-Preview-在m1芯片的mac上无法打开终端"><a href="#android-studio-Preview-在m1芯片的mac上无法打开终端" class="headerlink" title="android studio Preview 在m1芯片的mac上无法打开终端"></a>android studio Preview 在m1芯片的mac上无法打开终端</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>android studio Preview 在m1芯片的mac上打开终端报错，错误显示：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Cannot open Local Terminal</span><br><span class="line">Failed to start [/bin/bash, --rcfile, /Applications/Android Studio.app/Contents/plugins/terminal/jediterm-bash.in, -i] in /Users/&#123;UserName&#125;/Android</span><br><span class="line">See your idea.log (Help | Show Log in Finder) for the details.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="处理"><a href="#处理" class="headerlink" title="处理"></a>处理</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/JetBrains/pty4j.git</span><br><span class="line">cd pty4j/native</span><br><span class="line">clang -fPIC -c *.c</span><br><span class="line">clang -shared -o libpty.dylib *.o</span><br><span class="line">cp libpty.dylib &quot;/Applications/Android Studio Preview.app/Contents/lib/pty4j-native/darwin/&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+      <div class="tags">
+          <a href="/tags/flutter/" rel="tag"><i class="ic i-tag"></i> flutter</a>
+          <a href="/tags/dart/" rel="tag"><i class="ic i-tag"></i> dart</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2021-08-13 10:23:13" itemprop="dateModified" datetime="2021-08-13T10:23:13+08:00">2021-08-13</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="https://pic.zenglbg.com/images/wechat-pay.PNG" alt="zeng lbg WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="https://pic.zenglbg.com/images/ali-pay.JPG" alt="zeng lbg Alipay">
+        <p>Alipay</p>
+      </div>
+      
+      <div>
+        <img data-src="/paypal.png" alt="zeng lbg PayPal">
+        <p>PayPal</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>zeng lbg <i class="ic i-at"><em>@</em></i>圈圈-zenglbg
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="https://zenglbg.com/2021/08/12/flutter/android-studio/" title="android studio Preview 在m1芯片的mac上无法打开终端">https://zenglbg.com/2021/08/12/flutter/android-studio/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
   
 
-<footer class="footer">
-  <div class="footer-social"><a 
-        href="tencent://message/?Menu=yes&uin=97621191 "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#12B7F5'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconQQ "></i>
-      </a><a 
-        href="https://u.wechat.com/MLyshTgghEo84o1kpZcyWdg "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#09BB07'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconwechat-fill "></i>
-      </a><a 
-        href="https://www.instagram.com/zenglbg/ "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#DA2E76'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconinstagram "></i>
-      </a><a 
-        href="https://github.com/zenglbg "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#9f7be1'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  icongithub-fill "></i>
-      </a><a 
-        href="mailto:zzzibm@163.com "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color=#FF3B00" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconmail"></i>
-      </a></div>
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2021/08/12/vue/vue-mock/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;pic.zenglbg.com&#x2F;images&#x2F;girl&#x2F;girl4&#x2F;photo_2021-08-11 11.05.45.jpeg" title="vue中使用mockjs最完美方案">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> vue</span>
+  <h3>vue中使用mockjs最完美方案</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
   
-    <div class="footer-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/zenglbg">圈圈</a></p></div>
-  
-</footer>
-  
-      <div class="fab fab-plus">
-    <i class="iconfont iconplus"></i>
-  </div>
-  
-  
-  <div class="fab fab-up">
-    <i class="iconfont iconcaret-up"></i>
-  </div>
-  
-  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#android-studio-Preview-%E5%9C%A8m1%E8%8A%AF%E7%89%87%E7%9A%84mac%E4%B8%8A%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E7%BB%88%E7%AB%AF"><span class="toc-number">1.</span> <span class="toc-text">android studio Preview 在m1芯片的mac上无法打开终端</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%84%E7%90%86"><span class="toc-number">1.2.</span> <span class="toc-text">处理</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li><a href="/2021/07/27/docker-nginx/" rel="bookmark" title="docker nginx 配置证书">docker nginx 配置证书</a></li><li><a href="/2021/07/27/html-table/" rel="bookmark" title="HTML细线表格">HTML细线表格</a></li><li><a href="/2021/07/28/flutter/abstract/" rel="bookmark" title="flutter 组件化开发，抽离公共ui">flutter 组件化开发，抽离公共ui</a></li><li><a href="/2021/08/06/flutter/flutter-guide/" rel="bookmark" title="前端入门到精通flutter">前端入门到精通flutter</a></li><li class="active"><a href="/2021/08/12/flutter/android-studio/" rel="bookmark" title="android studio Preview 在m1芯片的mac上无法打开终端">android studio Preview 在m1芯片的mac上无法打开终端</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="zeng lbg"
+      data-src="/images/avatar.png">
+  <p class="name" itemprop="name">zeng lbg</p>
+  <div class="description" itemprop="description">这是一个关于前端，flutter，nodejs, vue, react的技术分享博客</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">14</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">8</span>
+        <span class="name">categories</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">16</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3plbmdsYmc=" title="https:&#x2F;&#x2F;github.com&#x2F;zenglbg"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS96ZW5nbGJn" title="https:&#x2F;&#x2F;twitter.com&#x2F;zenglbg"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPXlvdXJpZA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;yourid"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20veW91cm5hbWU=" title="https:&#x2F;&#x2F;weibo.com&#x2F;yourname"><i class="ic i-weibo"></i></span>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;about.me&#x2F;yourname"><i class="ic i-address-card"></i></span>
+      <span class="exturl item email" data-url="bWFpbHRvOnplbmdsYmdAbWFpbC5jb20=" title="mailto:zenglbg@mail.com"><i class="ic i-envelope"></i></span>
+      <span class="exturl item instagram" data-url="aHR0cHM6Ly9pbnN0YWdyYW0uY29tL3plbmdsYmc=" title="https:&#x2F;&#x2F;instagram.com&#x2F;zenglbg"><i class="ic i-instagram"></i></span>
+</div>
+
+<ul class="menu">
   
     
-<script src="/js/color-mode.js"></script>
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
 
-  
-  
-</body>
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+  </li>
 
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a>
+    <ul class="submenu">
 
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+  </li>
 
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+  </li>
 
-  
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+  </li>
 
-
-
-
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
-
-
-
-
-
-  
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
-
-
-
-
-<script src="/js/utils.js"></script>
-<script src="/js/script.js"></script>
-
-
-
-
+  </ul>
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>friends</a>
+  </li>
 
 
+</ul>
 
-  <script>
-    (function () {
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-      } else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/hexo/" title="In hexo">hexo</a>
+</div>
+
+    <span><a href="/2021/07/29/hexo/index/" title="hexo 学习资源汇总">hexo 学习资源汇总</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/flutter/" title="In flutter">flutter</a>
+</div>
+
+    <span><a href="/2021/07/27/docker-nginx/" title="docker nginx 配置证书">docker nginx 配置证书</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/vue/" title="In vue">vue</a>
+</div>
+
+    <span><a href="/2021/08/06/vue/vue-guide/" title="vue 多页面开发构建独立项目">vue 多页面开发构建独立项目</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/flutter/" title="In flutter">flutter</a>
+</div>
+
+    <span><a href="/2021/08/12/flutter/android-studio/" title="android studio Preview 在m1芯片的mac上无法打开终端">android studio Preview 在m1芯片的mac上无法打开终端</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/python/" title="In python">python</a>
+</div>
+
+    <span><a href="/2021/07/27/py-fs/" title="python 目录操作">python 目录操作</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/flutter/" title="In flutter">flutter</a>
+</div>
+
+    <span><a href="/2021/07/28/flutter/abstract/" title="flutter 组件化开发，抽离公共ui">flutter 组件化开发，抽离公共ui</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/07/26/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/vue/" title="In vue">vue</a>
+</div>
+
+    <span><a href="/2021/08/12/vue/vue-mock/" title="vue中使用mockjs最完美方案">vue中使用mockjs最完美方案</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/vscode/" title="In vscode">vscode</a>
+</div>
+
+    <span><a href="/2021/07/29/mapkey/vscode-mapkey/" title="macos vscode快捷键汇总">macos vscode快捷键汇总</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/flutter/" title="In flutter">flutter</a>
+</div>
+
+    <span><a href="/2021/08/06/flutter/flutter-guide/" title="前端入门到精通flutter">前端入门到精通flutter</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2021</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">zeng lbg @ 圈圈-zenglbg</span>
+  </div>
+  <div class="powered-by">
+    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2021/08/12/flutter/android-studio/',
+    favicon: {
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
       }
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  </script>
+    ]
+  };
+</script>
 
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
 
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
-  <script defer src='https://hm.baidu.com/hm.js?f98d7ea67325063ba3725e09132c0286'></script>
-
-
-
-
-
-  <script>
-    window.ga = window.ga || function () {
-      (ga.q = ga.q || []).push(arguments)
-    };
-    ga.l = +new Date;
-    ga('create', 'GTM-NSGWPHS', 'auto');
-    ga('send', 'pageview');
-  </script>
-  <script defer src='https://www.google-analytics.com/analytics.js'></script>
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 
 
-
-
-
+</body>
 </html>
