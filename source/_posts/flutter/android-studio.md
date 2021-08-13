@@ -6,7 +6,7 @@ categories:
 comments:
   - true
 keywords: zenglbg, flutter, dart
-image: https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.21 (1).jpeg
+image: https://pic.zenglbg.com/images/girl/girl4/photo_2021-08-11 11.05.49.jpeg
 ---
 
 # android studio Preview 在m1芯片的mac上无法打开终端
