@@ -31,7 +31,10 @@ cover: https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.21 (1).j
 
 1. [get,包含了导航与状态管理](https://pub.dev/packages/get)
 
-   
+
+## android-studio 常用快捷键以及代码片段
+
+1. [android-studio快捷键](https://www.jianshu.com/p/7cff367dbdde)
 
 
 
