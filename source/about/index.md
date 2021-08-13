@@ -1,6 +1,7 @@
 ---
 title: about
 date: 2021-07-29 10:30:32
+cover: https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.18.jpeg
 image: https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.18.jpeg
 ---
 

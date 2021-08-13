@@ -1,6 +1,7 @@
 ---
 title: 遗忘
 image: https://pic.zenglbg.com/images/girl/girl3/photo_2021-08-06 14.26.59 (1).jpeg
+cover: https://pic.zenglbg.com/images/girl/girl3/photo_2021-08-06 14.26.59 (1).jpeg
 
 
 ---

@@ -7,6 +7,7 @@ comments:
   - true
 keywords: zenglbg, vue, javascript, typescript, webpack
 image: https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.29.jpeg
+cover: https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.29.jpeg
 ---
 
 # vue 多页面开发构建独立项目

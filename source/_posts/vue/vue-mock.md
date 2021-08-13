@@ -7,6 +7,7 @@ comments:
   - true
 keywords: zenglbg, vue,  webpack, javascript, node, mockjs
 image: https://pic.zenglbg.com/images/girl/girl4/photo_2021-08-11 11.05.45.jpeg
+cover: https://pic.zenglbg.com/images/girl/girl4/photo_2021-08-11 11.05.45.jpeg
 ---
 
 

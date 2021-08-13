@@ -129,7 +129,7 @@ baidusitemap:
 sitemap:
   path: sitemap.xml
 
-theme: zhaoo
+theme: shoka
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
