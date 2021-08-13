@@ -153,9 +153,9 @@ reward:
   # If true, reward will be displayed in every article by default.
   enable: true
   account:
-    wechatpay: https://pic.zenglbg.com/images/wechat-pay.PNG
-    alipay: https://pic.zenglbg.com/images/ali-pay.JPG
-    paypal: /paypal.png
+    wechatpay: https://pic.zenglbg.com/images/42__b4f3d618f5bdececf348e92f4a14da79_e4a2e0a3aa80482ec66e2dfffe758868.png
+    alipay: https://pic.zenglbg.com/images/45__6b3162b294c57acb0b4905da57d0b29f_86b0d0fa355c3035179ad94dc9cf7335.png
+    paypal: https://pic.zenglbg.com/images/45__c8a3cdf6cad411aa6a0961325a0f5a58_57a906211f82bc915ca4b0d3cf18eb9b.png
 
 # TagCloud settings for tags page.
 tagcloud:
@@ -249,7 +249,7 @@ quicklink:
 # ---------------------------------------------------------------
 # analytics & SEO Settings
 # ---------------------------------------------------------------
-baidu_analytics: # <app_id>
+baidu_analytics: f98d7ea67325063ba3725e09132c0286
 
 # Disable Baidu transformation on mobile devices.
 disable_baidu_transformation: true
@@ -259,7 +259,7 @@ exturl: true
 
 # Google Webmaster tools verification.
 # See: https://www.google.com/webmasters
-google_site_verification:
+google_site_verification: GTM-NSGWPHS
 
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmaster
@@ -271,7 +271,7 @@ yandex_site_verification:
 
 # Baidu Webmaster tools verification.
 # See: https://ziyuan.baidu.com/site
-baidu_site_verification:
+baidu_site_verification: f98d7ea67325063ba3725e09132c0286
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
 baidu_push: false
