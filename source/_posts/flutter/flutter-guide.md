@@ -25,7 +25,7 @@ cover: https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.21 (1).j
 
 2. [flutter入门指南](https://juejin.cn/column/6960631670378594311)
 
-   
+3. [flutter 弹窗封装](https://tomoya92.github.io/2019/07/18/flutter-dialogs/)   
 
 ## flutter 常用依赖
 
