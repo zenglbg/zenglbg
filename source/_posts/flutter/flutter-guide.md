@@ -36,6 +36,7 @@ cover: https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.21 (1).j
 
 1. [get,包含了导航与状态管理](https://pub.dev/packages/get)
 
+2. [常用依赖](https://github.com/OpenFlutter/Flutter-Notebook)
 
 ## android-studio 常用快捷键以及代码片段
 
