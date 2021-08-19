@@ -7,6 +7,7 @@ comments:
   - true
 keywords: zenglbg, flutter, dart
 image: https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.21 (1).jpeg
+
 cover: https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.21 (1).jpeg
 ---
 
@@ -35,6 +36,7 @@ cover: https://pic.zenglbg.com/images/girl/girl2/photo_2021-07-28 18.55.21 (1).j
 ## flutter 常用依赖
 
 1. [get,包含了导航与状态管理](https://pub.dev/packages/get)
+
 
 2. [常用依赖](https://github.com/OpenFlutter/Flutter-Notebook)
 
